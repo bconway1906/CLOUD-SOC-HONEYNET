@@ -11,25 +11,26 @@ In this project, I set up a small honeynet within Microsoft Azure, collecting lo
 - SecurityIncident (Incidents created by Sentinel)
 - AzureNetworkAnalytics_CL (Malicious Flows allowed into our honeynet)
 
-## Architecture Before Hardening / Security Controls
-![Architecture Diagram](https://i.imgur.com/aBDwnKb.jpg)
-
-## Architecture After Hardening / Security Controls
-![Architecture Diagram](https://i.imgur.com/YQNa9Pp.jpg)
-
+## Mini Honeynet Architecture
 The architecture of the mini honeynet in Azure consists of the following components:
 
-- Virtual Network (VNet)
-- Network Security Group (NSG)
+- Virtual Network
+- Network Security Group
 - Virtual Machines (2 windows, 1 linux)
 - Log Analytics Workspace
 - Azure Key Vault
 - Azure Storage Account
 - Microsoft Sentinel
 
-For the "BEFORE" metrics, all resources were originally deployed, exposed to the internet. The Virtual Machines had both their Network Security Groups and built-in firewalls wide open, and all other resources are deployed with public endpoints visible to the Internet; aka, no use for Private Endpoints.
+## Architecture Before Security Controls
+![Architecture Diagram](https://i.imgur.com/aBDwnKb.jpg)
 
-For the "AFTER" metrics, Network Security Groups were hardened by blocking ALL traffic with the exception of my admin workstation, and all other resources were protected by their built-in firewalls as well as Private Endpoint
+In the initial configuration, all resources were deployed with exposure to the internet. This setup left Virtual Machines vulnerable, as both their Network Security Groups and built-in firewalls allowed unrestricted inbound and outbound traffic. Furthermore, all other resources had public endpoints that were accessible from the internet, rendering the need for Private Endpoints redundant.
+
+## Architecture After Hardening / Security Controls
+![Architecture Diagram](https://i.imgur.com/YQNa9Pp.jpg)
+
+The Network Security Groups underwent a substantial security enhancement, implementing a strict block on all network traffic except for that originating from my admin workstation. Furthermore, the remaining resources were fortified by utilizing both their built-in firewalls and Private Endpoints for enhanced protection.
 
 ## Attack Maps Before Hardening / Security Controls
 ![NSG Allowed Inbound Malicious Flows](https://i.imgur.com/1qvswSX.png)<br>
