@@ -27,17 +27,17 @@ The architecture of the mini honeynet in Azure consists of the following compone
 
 In the initial configuration, all resources were deployed with exposure to the internet. This setup left Virtual Machines vulnerable, as both their Network Security Groups and built-in firewalls allowed unrestricted inbound and outbound traffic. Furthermore, all other resources had public endpoints that were accessible from the internet, rendering the need for Private Endpoints redundant.
 
-## Architecture After Hardening / Security Controls
+## Architecture After Security Controls
 ![Architecture Diagram](https://i.imgur.com/YQNa9Pp.jpg)
 
 The Network Security Groups underwent a substantial security enhancement, implementing a strict block on all network traffic except for that originating from my admin workstation. Furthermore, the remaining resources were fortified by utilizing both their built-in firewalls and Private Endpoints for enhanced protection.
 
-## Attack Maps Before Hardening / Security Controls
+## Attack Maps Before Security Controls
 ![NSG Allowed Inbound Malicious Flows](https://i.imgur.com/1qvswSX.png)<br>
 ![Linux Syslog Auth Failures](https://i.imgur.com/G1YgZt6.png)<br>
 ![Windows RDP/SMB Auth Failures](https://i.imgur.com/ESr9Dlv.png)<br>
 
-## Metrics Before Hardening / Security Controls
+## Metrics Before Security Controls
 
 The following table shows the metrics we measured in our insecure environment for 24 hours:
 Start Time 2023-03-15 17:04:29
