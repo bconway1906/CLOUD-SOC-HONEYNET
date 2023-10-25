@@ -1,5 +1,6 @@
 # Creating a Security Operations Center (SOC) and Honeynet in Microsoft Azure with Live Traffic.
-![Cloud Honeynet / SOC](https://i.imgur.com/ZWxe03e.jpg)
+![image](https://github.com/bconway1906/CLOUD-SOC-HONEYNET/assets/148906255/8b6c94e1-5548-42b4-91e4-91acc2e131f5)
+
 
 ## Introduction
 
@@ -21,6 +22,8 @@ The architecture of the mini honeynet in Azure consists of the following compone
 - Azure Key Vault
 - Azure Storage Account
 - Microsoft Sentinel
+
+![image](https://github.com/bconway1906/CLOUD-SOC-HONEYNET/assets/148906255/513093f2-7303-42a9-8911-3989960d07c0)
 
 ## Architecture Before Security Controls
 ![Architecture Diagram](https://i.imgur.com/aBDwnKb.jpg)
