@@ -1,4 +1,4 @@
-# Creating a Security Operations Center (SOC) and Honeynet in Microsoft Azure with Live Traffic.
+# Creating a Security Operations Center (SOC) and Honeynet in Microsoft Azure
 ![image](https://github.com/bconway1906/CLOUD-SOC-HONEYNET/assets/148906255/8b6c94e1-5548-42b4-91e4-91acc2e131f5)
 
 
