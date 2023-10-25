@@ -1,4 +1,4 @@
-# Building a SOC + Honeynet in Azure (Live Traffic)
+# Creating a Security Operations Center (SOC) and Honeynet in Microsoft Azure with Live Traffic.
 ![Cloud Honeynet / SOC](https://i.imgur.com/ZWxe03e.jpg)
 
 ## Introduction
@@ -33,9 +33,10 @@ In the initial configuration, all resources were deployed with exposure to the i
 The Network Security Groups underwent a substantial security enhancement, implementing a strict block on all network traffic except for that originating from my admin workstation. Furthermore, the remaining resources were fortified by utilizing both their built-in firewalls and Private Endpoints for enhanced protection.
 
 ## Attack Maps Before Security Controls
-![NSG Allowed Inbound Malicious Flows](https://i.imgur.com/1qvswSX.png)<br>
-![Linux Syslog Auth Failures](https://i.imgur.com/G1YgZt6.png)<br>
-![Windows RDP/SMB Auth Failures](https://i.imgur.com/ESr9Dlv.png)<br>
+![image](https://github.com/bconway1906/CLOUD-SOC-HONEYNET/assets/148906255/f9df8bf9-2297-4d0d-9929-31967485e847)<br>
+![image](https://github.com/bconway1906/CLOUD-SOC-HONEYNET/assets/148906255/216db8ff-fc86-4d7f-b573-cea3f2db4f5f)<br>
+![image](https://github.com/bconway1906/CLOUD-SOC-HONEYNET/assets/148906255/fc2eb31d-c07d-48ed-9d67-cbed4371f1f5)<br>
+![image](https://github.com/bconway1906/CLOUD-SOC-HONEYNET/assets/148906255/a2b7af8e-90d6-4dab-968a-208384d23e99)<br>
 
 ## Metrics Before Security Controls
 
